@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background= "#5F9CF7"
+    android:background= "@drawable/my_shape"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -14,6 +14,7 @@
         android:layout_marginStart="68dp"
         android:layout_marginEnd="68dp"
         android:text="Welcome to Lucky Number"
+        android:fontFamily="@font/roboto_black"
         android:textStyle="bold"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,6 +32,7 @@
         android:layout_marginTop="88dp"
         android:layout_marginEnd="68dp"
         android:ems="10"
+        android:fontFamily="@font/roboto_black"
         android:hint="Nombre"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,6 +44,7 @@
         android:layout_width="146dp"
         android:layout_height="58dp"
         android:layout_marginTop="56dp"
+        android:fontFamily="@font/roboto_black"
         android:text="Acceder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

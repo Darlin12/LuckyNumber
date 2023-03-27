@@ -10,6 +10,7 @@
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_black"
         android:layout_marginTop="168dp"
         android:text="Your lucky number is"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -35,6 +36,7 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
+        android:fontFamily="@font/roboto_black"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="Share"
@@ -46,6 +48,7 @@
     <Button
         android:id="@+id/buttonAtrás"
         android:layout_width="91dp"
+        android:fontFamily="@font/roboto_black"
         android:layout_height="47dp"
         android:layout_marginTop="20dp"
         android:text="Back"

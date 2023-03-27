@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -57,9 +59,10 @@ public class LuckyNumberActivity extends AppCompatActivity {
             }
         });
 
+
     }
 
-    //Funcion para generar el random numbre
+    //Función para generar el random numbre
     public int randomNumber(){
         Random r = new Random();
 
@@ -68,7 +71,7 @@ public class LuckyNumberActivity extends AppCompatActivity {
         return number;
     }
 
-    //Funcion con Intent para compartir el resultado
+    //Función con Intent para compartir el resultado
     public void shareData(String name, String randomNumber){
 
         //Implicit Intent
@@ -86,5 +89,14 @@ public class LuckyNumberActivity extends AppCompatActivity {
         startActivity(Intent.createChooser(sd, "Share To:"));
 
 
+    }
+
+    //Función para mostrar menú en el main activity/pantalla principal
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.my_menu,menu);
+        return true;
     }
 }
